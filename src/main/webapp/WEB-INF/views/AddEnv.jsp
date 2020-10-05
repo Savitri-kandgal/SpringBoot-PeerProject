@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Welcome</title>
+<title>Add Environment</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -27,7 +27,6 @@
 	text-align: center;
 }
 </style>
-
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -41,37 +40,45 @@
 			</ul>
 		</div>
 	</nav>
-	<form action="onSaveAppInfo" method="post">
+	<form action="addappinfo.do" method="post">
 		<div class="container">
 			<h3>
-				<mark>Message Details</mark>
+				<mark>ENV Details</mark>
 			</h3>
 			<table class="table table-hover">
 				<tbody class="form-inline">
 					<tr>
-						<td>From:</td>
-						<td><input id="from" type="text" name="fName"
-							placeholder="enter the FROM name"></td>
+						<td>ENVIRONMENT:</td>
+						<td><input id="env" type="text" name="env"
+							placeholder="enter the ENV"></td>
 					</tr>
 					<tr>
-						<td>To:</td>
-						<td><input id="to" type="text" name="tName" placeholder="Enter the TO name"></td>
+						<td>URL:</td>
+						<td><input id="url" type="text" name="url"
+							placeholder="Enter the URL"></td>
 					</tr>
 					<tr>
-						<td>Message:</td>
-						<td><textarea rows="4" cols="70" id="msg" name="message"
-								placeholder="Enter the Message"></textarea></td>
+						<td><label>Accessible:</label> <select name="accessible"
+							class="form-control">
+								<option>--select--</option>
+								<option>Yes</option>
+								<option>No</option>
+						</select></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 		<div class="text-center">
-			<button type="submit">Send</button>
+			<button type="submit">Save</button>
 		</div>
-	<div class="footer">
- <p> <a href="ContactInfo.jsp"><u><h4>Contact Details</h4></u></a></p>
- </div>
+		<div class="footer">
+			<p>
+				<a href="ContactInfo.jsp"><h4>
+						<u>Contact Details</u>
+					</h4></a>
+			</p>
+		</div>
 	</form>
 </body>
-
+</body>
 </html>

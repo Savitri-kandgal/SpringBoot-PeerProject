@@ -1,4 +1,4 @@
-package com.SpringbootApp.peerproject;
+package com.springbootapp.peerproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

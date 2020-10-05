@@ -1,4 +1,4 @@
-package com.SpringbootApp.peerproject.Entity;
+package com.springbootapp.peerproject.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

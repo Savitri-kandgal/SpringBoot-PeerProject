@@ -1,4 +1,4 @@
-package com.SpringbootApp.peerproject.dto;
+package com.springbootapp.peerproject.dto;
 
 public class MessageDTO {
 
