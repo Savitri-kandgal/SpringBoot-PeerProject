@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,12 +36,12 @@
 				<p class="navbar-text" style="color: white; font-size: 20px;">X-Workz</p>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="AddAppInfo.jsp"><span
-						class="glyphicon glyphicon-user"></span>Add App Info</a></li>
+				<li><a href="AddAppInfo1.jsp"><span
+class="glyphicon glyphicon-user"></span>Add App Info</a></li>
 			</ul>
 		</div>
 	</nav>
-	<form action="onSaveAppInfo" method="post">
+	<form action="onclick" method="post">
 		<div class="container">
 			<h3>
 				<mark>Message Details</mark>

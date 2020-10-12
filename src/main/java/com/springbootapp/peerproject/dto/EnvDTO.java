@@ -1,10 +1,19 @@
 package com.springbootapp.peerproject.dto;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class EnvDTO {
 
+	private static final Logger LOGGER=LoggerFactory.getLogger(EnvDTO.class);
+	
 	private String env;
 	private String url;
-	private String accessible;
+	private boolean isAccessible;
+	
+	public EnvDTO() {
+		LOGGER.info("LOGGER : EnvDTO :" + this.getClass().getSimpleName() + "object created");
+	}
 	public String getEnv() {
 		return env;
 	}
@@ -17,12 +26,12 @@ public class EnvDTO {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getAccessible() {
-		return accessible;
+	public boolean isAccessible() {
+		return isAccessible;
 	}
-	public void setAccessible(String accessible) {
-		this.accessible = accessible;
+	public void setAccessible(boolean isAccessible) {
+		this.isAccessible = isAccessible;
 	}
-	
+
 	
 }

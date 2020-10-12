@@ -1,6 +1,8 @@
-package com.springbootapp.peerproject.Entity;
+package com.springbootapp.peerproject.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.springbootapp.peerproject.Entity.MessageEntity;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called MessageRepository
 	// CRUD refers Create, Read, Update, Delete

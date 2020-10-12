@@ -5,9 +5,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Entity
 public class MessageEntity {
 
+	private static final Logger LOGGER=LoggerFactory.getLogger(MessageEntity.class);
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int mId;
@@ -15,6 +19,9 @@ public class MessageEntity {
 	private String tName;
 	private String message;
 
+	public MessageEntity() {
+		LOGGER.info("LOGGER : MessageEntity :" + this.getClass().getSimpleName() + "object created");
+	}
 	public int getmId() {
 		return mId;
 	}

@@ -10,5 +10,7 @@
 <h3>From: ${dto.getfName()}</h3>
 <h3>To: ${dto.gettName()}</h3>
  <h3>Message: ${dto.getMessage()}</h3>
+ 
+ 
 </body>
 </html>
